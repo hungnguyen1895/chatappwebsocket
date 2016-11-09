@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<title>CHAT APP</title>
+</head>
+<body>
+	<div class="wrapper">
+		<h2>Websocket</h2>
+		<div class="chat">
+			
+			<div class="messages"></div>
+			<!--using action javascript avoid 0 to unreset the page every time the user enter a new message -->
+			<form action="javascript:avoid(0)">
+				<input class="info" type="text" id="userName" name="" autofocus placeholder="Name">
+				<input class="info" type="text" id="message" placeholder="Type something..."" autofocus>	
+				<button class="info" id="btn" type="submit" onclick="send()">Send</button>
+			</form>
+		</div>
+	</div>
+<script type="text/javascript" src="ws-client.js"></script>
+</body>
+</html>
